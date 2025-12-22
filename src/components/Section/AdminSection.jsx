@@ -4,7 +4,6 @@ import { ButtonLoaded } from "../common/Loaded";
 import { ErrorMessage } from "../common/ErrorMessage";
 import Card from "../Card/Card";
 
-//WIS, TINGGAL ATUR LOGIC, PUSING PUSING KALEN, AHAHAHAHAHHAHAHA
 const AdminSection = () => {
   const { courses, loading, apiError, addCourse, updateCourse, deleteCourse } =
     useCourses({ mode: "admin" });
