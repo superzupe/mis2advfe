@@ -1,16 +1,57 @@
-# React + Vite
+# 🎓 VideoBelajar - E-Learning Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**VideoBelajar** adalah platform pembelajaran mandiri berbasis web yang
+dirancang untuk memberikan pengalaman eksplorasi kursus yang interaktif dan
+responsif. Aplikasi ini mengintegrasikan manajemen state yang kompleks dan
+antarmuka modern untuk memudahkan pengguna dalam belajar.
 
-Currently, two official plugins are available:
+## 🚀 Fitur Utama
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Katalog Kursus Dinamis**: Menampilkan daftar kursus dengan sistem filter
+  berdasarkan kategori, harga, dan durasi secara real-time.
+- **State Management Global**: Menggunakan **Redux Toolkit** untuk sinkronisasi
+  data yang konsisten di seluruh komponen aplikasi.
+- **Sistem Autentikasi**: Fitur Login dan Register yang aman dengan implementasi
+  **Axios Interceptors** untuk menangani token.
+- **Admin Dashboard (CRUD)**: Halaman khusus admin yang memungkinkan pengelolaan
+  data kursus (Tambah, Edit, Hapus) secara langsung.
+- **UI/UX Responsif**: Antarmuka yang dioptimalkan untuk berbagai perangkat
+  (Mobile & Desktop) menggunakan **Tailwind CSS**.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Core Framework**: [React.js](https://reactjs.org/) (Vite)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **State Management**: [Redux Toolkit](https://redux-toolkit.js.org/)
+- **API Handling**: [Axios](https://axios-http.com/) (dengan Request/Response
+  Interceptors)
+- **Routing**: [React Router Dom v6](https://reactrouter.com/)
 
-## Expanding the ESLint configuration
+## ⚙️ Instalasi & Menjalankan Proyek
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone repositori**
+   ```
+   git clone [https://github.com/username/video-belajar.git](https://github.com/username/video-belajar.git)
+   ```
+2. **Masuk ke direktori proyek**
+  ```
+  cd video-belajar
+  ```
+3. **Instal dependensi**
+  ```
+  npm install
+  ```
+3. **Jalankan aplikasi (Mode Development)**
+  ```
+  npm run dev
+  ```
+
+## 📁 Struktur Folder Utama
+  ```
+  src/components: Komponen UI yang reusable (Header, Card, Button).
+  src/store: Konfigurasi Redux Toolkit (Slices & Store).
+  src/services: Logika integrasi API dan Axios Interceptors.
+  src/pages: Halaman utama seperti Home, Login, dan Dashboard Admin.
+  ```
+
+Dibuat dengan ❤️ oleh zupp
