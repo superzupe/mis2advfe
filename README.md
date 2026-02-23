@@ -48,10 +48,13 @@ antarmuka modern untuk memudahkan pengguna dalam belajar.
 
 ## 📁 Struktur Folder Utama
   ```
-  src/components: Komponen UI yang reusable (Header, Card, Button).
-  src/store: Konfigurasi Redux Toolkit (Slices & Store).
-  src/services: Logika integrasi API dan Axios Interceptors.
-  src/pages: Halaman utama seperti Home, Login, dan Dashboard Admin.
+  src/
+├── components/     # Komponen UI reusable (Header, Card, Button, dsb)
+├── hooks/          # Custom hooks untuk logika bisnis (e.g., useCourses)
+├── pages/          # Halaman utama (Home, Login, Admin Dashboard)
+├── services/       # Integrasi API dan konfigurasi Axios Interceptors
+├── store/          # Manajemen state global (Redux Store & Slices)
+└── utils/          # Fungsi pembantu dan utilitas lainnya
   ```
 
 Dibuat dengan ❤️ oleh zupp
